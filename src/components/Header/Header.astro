@@ -1,0 +1,192 @@
+---
+import { getLanguageFromURL, KNOWN_LANGUAGE_CODES } from '../../languages';
+import * as CONFIG from '../../config';
+import AstroLogo from './AstroLogo.astro';
+import SkipToContent from './SkipToContent.astro';
+import SidebarToggle from './SidebarToggle';
+import LanguageSelect from './LanguageSelect';
+import Search from './Search';
+import ThemeToggleButton from './ThemeToggleButton';
+
+type Props = {
+	currentPage: string;
+};
+
+const { currentPage } = Astro.props as Props;
+const lang = getLanguageFromURL(currentPage);
+---
+
+<header>
+	<SkipToContent />
+	<nav class="nav-wrapper" title="Top Navigation">
+
+
+		<!-- site title and logo -->
+		<div class="logo flex">
+			<a href="/">
+				<!-- <AstroLogo size={40} />-->
+				<h1>{CONFIG.SITE.title ?? 'Documentation'}</h1>
+			</a>
+		</div>
+
+		<div style="flex-grow: 1;"></div>
+
+		<!-- theme switch -->
+		<div style="margin: 2rem 0; text-align: center;">
+			<ThemeToggleButton client:visible />
+		</div>
+
+		<!-- language switch -->
+		{KNOWN_LANGUAGE_CODES.length > 1 && <LanguageSelect lang={lang} client:idle />}
+
+		<!-- 
+		<div class="search-item">
+			<Search client:idle />
+		</div>
+		-->
+		<!-- menu button, which only appears on small screen -->
+		<div class="menu-toggle">
+			<SidebarToggle client:idle />
+		</div>
+	</nav>
+</header>
+
+<style>
+	header {
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		height: var(--theme-navbar-height);
+		z-index: 11;
+		padding: 2rem 0;
+		background-color: var(--theme-navbar-bg);
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		overflow: hidden;
+	}
+
+	ul,
+	li {
+		all: inherit;
+		flex-grow: 0;
+	}
+
+	.logo {
+		display: flex;
+		justify-content: flex-start;
+		flex-grow: 1;
+		flex-shrink: 0;
+		font-weight: 600;
+		line-height: 1;
+		color: hsla(var(--color-base-white), 100%, 1);
+		gap: 0.5em;
+		font-size: 2rem;
+	}
+
+	.logo a {
+		padding: 0.5em 0.25em;
+		margin: -0.5em -0.25em;
+		text-decoration: none;
+		font-weight: bold;
+	}
+
+	.logo a {
+		transition: color 100ms ease-out;
+		color: var(--theme-text);
+	}
+
+	.logo a:hover,
+	.logo a:focus {
+		color: var(--theme-text-accent);
+	}
+
+	.logo h1 {
+		display: none;
+		font: inherit;
+		color: inherit;
+		margin: 0;
+	}
+
+	.nav-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.75em;
+		width: 100%;
+		padding-inline: var(--min-spacing-inline);
+	}
+
+	/* If the device is likely to show a scrollbar gutter, reserve space for it */
+	@media (hover: hover) {
+		.nav-wrapper {
+			max-width: calc(100vw - 1.1rem);
+		}
+	}
+
+	@media (min-width: 20em) {
+		.docs {
+			display: inherit;
+			max-width: 80px;
+		}
+	}
+
+	@media (min-width: 23.5em) {
+		.docs {
+			max-width: none;
+		}
+		.nav-wrapper {
+			gap: 1rem;
+		}
+	}
+
+	@media (min-width: 50em) {
+		header {
+			position: fixed;
+			padding: 2rem 0rem;
+		}
+
+		.logo {
+			width: auto;
+			margin: 0;
+			z-index: 0;
+		}
+
+		.logo h1 {
+			display: initial;
+		}
+
+		.menu-toggle {
+			display: none;
+		}
+	}
+
+	/** Style Algolia */
+	:root {
+		--docsearch-primary-color: var(--theme-accent);
+		--docsearch-logo-color: var(--theme-text);
+	}
+
+	.search-item {
+		display: none;
+		position: relative;
+		z-index: 10;
+		flex-grow: 1;
+		padding-right: 0.7rem;
+		display: flex;
+		max-width: 200px;
+	}
+
+	@media (min-width: 50em) {
+		.search-item {
+			max-width: 400px;
+		}
+	}
+</style>
+
+<style is:global>
+	.search-item > * {
+		flex-grow: 1;
+	}
+</style>

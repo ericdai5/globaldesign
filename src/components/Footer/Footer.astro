@@ -1,0 +1,24 @@
+---
+import AvatarList from './AvatarList.astro';
+type Props = {
+	path: string;
+};
+const { path } = Astro.props as Props;
+---
+
+<footer>
+	<!--
+	<AvatarList path={path} />
+-->
+<a>
+	Created by Eric Dai ⓒ 2022 Global Design
+</a>
+</footer>
+
+<style>
+	footer {
+		margin-top: auto;
+		padding: 2rem;
+		border-top: 3px solid var(--theme-divider);
+	}
+</style>
