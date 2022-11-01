@@ -84,7 +84,6 @@ const lang = getLanguageFromURL(currentPage);
 		line-height: 1;
 		color: hsla(var(--color-base-white), 100%, 1);
 		gap: 0.5em;
-		font-size: 2rem;
 	}
 
 	.logo a {
@@ -129,6 +128,12 @@ const lang = getLanguageFromURL(currentPage);
 		}
 	}
 
+	@media (max-width: 380px) {
+		.logo {
+			font-size: 1rem;
+		}
+	}
+
 	@media (min-width: 20em) {
 		.docs {
 			display: inherit;
@@ -143,6 +148,9 @@ const lang = getLanguageFromURL(currentPage);
 		.nav-wrapper {
 			gap: 1rem;
 		}
+		.logo {
+			font-size: 1.5rem;
+		}
 	}
 
 	@media (min-width: 50em) {
@@ -156,6 +164,7 @@ const lang = getLanguageFromURL(currentPage);
 		.logo {
 			width: auto;
 			margin: 0;
+			font-size: 2rem;
 		}
 
 		.logo h1 {
