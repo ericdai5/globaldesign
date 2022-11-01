@@ -42,7 +42,7 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 				display: none;
 				background: var(--theme-bg-gradient);
 				z-index: 10;
-				inset-inline-start: 0;
+				inset-inline-start: 2rem;
 			}
 			#right-sidebar {
 				display: none;
@@ -58,6 +58,7 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 				padding-top: var(--theme-navbar-height);
 				padding-bottom: var(--doc-padding-block);
 			}
+
 			/* Allow showing left sidebar as an overlay, but only while viewport stays narrow */
 			@media not screen and (min-width: 50em) {
 				/* Make the left sidebar visible and fill the entire viewport below the navbar */
@@ -85,11 +86,14 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 					overscroll-behavior: contain;
 				}
 			}
-
+			
+			/* settings for the whole page at 50 em */
 			@media (min-width: 50em) {
+
 				.main-column {
-					margin-inline-start: var(--theme-left-sidebar-width);
+					margin-inline-start: calc(var(--theme-left-sidebar-width) + 2rem);
 				}
+
 				#left-sidebar {
 					display: flex;
 					padding-inline-start: var(--min-spacing-inline);
@@ -108,6 +112,7 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 					display: flex;
 				}
 			}
+
 		</style>
 
 		<!--
