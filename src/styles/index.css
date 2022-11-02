@@ -380,3 +380,22 @@ h2.heading {
 :target {
 	scroll-margin: calc(var(--theme-sidebar-offset, 5rem) + 2rem) 0 2rem;
 }
+
+/*
+	Add the correct amount of scroll padding to ensure that linked headings are always visible
+	and have enough distance to the viewport edge and potential fixed navigation bars.
+
+	Please note that this can't be done with `scroll-margin` on the scroll targets themselves
+	due to lack of iOS Safari browser support.
+*/
+html {
+	/* Mobile TOC is displayed above page content */
+	scroll-padding-top: calc(1.5rem + var(--theme-navbar-height));
+}
+
+@media (min-width: 72em) {
+	html {
+		/* Regular TOC is displayed as a sidebar */
+		scroll-padding-top: calc(1.5rem + var(--theme-navbar-height));
+	}
+}

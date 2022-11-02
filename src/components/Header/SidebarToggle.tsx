@@ -1,6 +1,8 @@
 /** @jsxImportSource preact */
 import type { FunctionalComponent } from 'preact';
 import { useState, useEffect } from 'preact/hooks';
+import './HeaderButton.css';
+import './SidebarToggle.css';
 
 const MenuToggle: FunctionalComponent = () => {
 	const [sidebarShown, setSidebarShown] = useState(false);
@@ -16,6 +18,8 @@ const MenuToggle: FunctionalComponent = () => {
 
 	return (
 		<button
+			id="menu-toggle"
+			className="header-button"
 			type="button"
 			aria-pressed={sidebarShown ? 'true' : 'false'}
 			id="menu-toggle"

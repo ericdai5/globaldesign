@@ -45,6 +45,7 @@ const sidebar = SIDEBAR[langCode];
 	</ul>
 </nav>
 
+<!-- 
 <script is:inline>
 	window.addEventListener('DOMContentLoaded', () => {
 		var target = document.querySelector('[aria-current="page"]');
@@ -53,13 +54,21 @@ const sidebar = SIDEBAR[langCode];
 		}
 	});
 </script>
+-->
+
+<script>
+	window.addEventListener('DOMContentLoaded', () => {
+		var target = document.querySelector('[aria-current="page"]');
+		target?.scrollIntoView({ block: 'center' });
+	});
+</script>
 
 <style>
 
 	/* the entire nav and its fonts */
 	nav {
 		width: 100%;
-		height: 100;
+		height: 100%;
 		font-size: var(--theme-text-md);
 	}
 
@@ -75,17 +84,19 @@ const sidebar = SIDEBAR[langCode];
 		margin-top: 1rem;
 	}
 
-	/* first section on menu */
+
+	/* first section on menu 
 	.nav-groups > :first-child {
 		padding-top: var(--doc-padding);
 	}
+	*/
 
 	/* last section on menu */
 	.nav-groups > :last-child {
 		margin-bottom: var(--theme-navbar-height);
 	}
 
-	/* title of section */
+	/* title of section 
 	.nav-group-title {
 		font-size: 1rem;
 		font-weight: 700;
@@ -93,6 +104,7 @@ const sidebar = SIDEBAR[langCode];
 		text-transform: uppercase;
 		margin-bottom: 0.5rem;
 	}
+	*/
 
 	/* for each link tab */
 	.nav-link a {
@@ -109,7 +121,7 @@ const sidebar = SIDEBAR[langCode];
 		display: block;
 		border-radius: 99rem;
 	}
-	
+
 	.nav-link a:hover,
 	.nav-link a:focus {
 		background-color: var(--theme-bg-hover);
