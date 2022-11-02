@@ -1,8 +1,9 @@
 /** @jsxImportSource react */
-import type { FunctionComponent } from 'preact';
+import type { FunctionComponent } from 'react';
+import './HeaderButton.css';
 import './LanguageSelect.css';
 import { KNOWN_LANGUAGES, langPathRegex } from '../../languages';
-import './HeaderButton.css';
+
 
 const LanguageSelect: FunctionComponent<{ lang: string }> = ({ lang }) => {
 	return (

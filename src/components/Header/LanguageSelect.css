@@ -34,9 +34,6 @@
 	background-color: var(--theme-bg);
 }
 
-[dir='rtl'] .language-select {
-	background-position: 3%;
-}
 
 @media (hover: hover) {
 	.language-select-wrapper > svg {
