@@ -22,7 +22,6 @@ const MenuToggle: FunctionalComponent = () => {
 			className="header-button"
 			type="button"
 			aria-pressed={sidebarShown ? 'true' : 'false'}
-			id="menu-toggle"
 			onClick={() => setSidebarShown(!sidebarShown)}
 		>
 			<svg
