@@ -25,7 +25,7 @@ const LanguageSelect: FunctionComponent<{ lang: string }> = ({ lang }) => {
 				/>
 			</svg>
 			<select
-				className="language-select"
+				className="header-button language-select"
 				value={lang}
 				onChange={(e) => {
 					const newLang = e.target.value;
