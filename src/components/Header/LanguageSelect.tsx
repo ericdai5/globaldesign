@@ -1,7 +1,8 @@
 /** @jsxImportSource react */
-import type { FunctionComponent } from 'react';
+import type { FunctionComponent } from 'preact';
 import './LanguageSelect.css';
 import { KNOWN_LANGUAGES, langPathRegex } from '../../languages';
+import './HeaderButton.css';
 
 const LanguageSelect: FunctionComponent<{ lang: string }> = ({ lang }) => {
 	return (
@@ -27,6 +28,7 @@ const LanguageSelect: FunctionComponent<{ lang: string }> = ({ lang }) => {
 			<select
 				className="header-button language-select"
 				value={lang}
+				aria-label="Select language"
 				onChange={(e) => {
 					const newLang = e.target.value;
 					let actualDest = window.location.pathname.replace(langPathRegex, '/');
@@ -37,7 +39,7 @@ const LanguageSelect: FunctionComponent<{ lang: string }> = ({ lang }) => {
 				{Object.entries(KNOWN_LANGUAGES).map(([key, value]) => {
 					return (
 						<option value={value} key={value}>
-							{key}
+							<span>{key}&nbsp;&nbsp;&nbsp;</span>
 						</option>
 					);
 				})}
