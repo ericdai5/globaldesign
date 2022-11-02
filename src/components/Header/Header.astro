@@ -33,7 +33,10 @@ const lang = getLanguageFromURL(currentPage);
 
 		<!-- theme switch -->
 		<div style="margin: 2rem 0; text-align: center;">
-			<ThemeToggleButton client:visible />
+			<ThemeToggleButton 
+				client:visible 
+				isInsideHeader={true}
+			/>
 		</div>
 
 		<!-- language switch -->

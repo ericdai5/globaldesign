@@ -4,6 +4,10 @@ import './ThemeToggleButton.css';
 
 const themes = ['light', 'dark'];
 
+interface Props {
+	isInsideHeader: boolean;
+}
+
 const icons = [
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +33,7 @@ const icons = [
 	</svg>,
 ];
 
-const ThemeToggle: FunctionalComponent = () => {
+const ThemeToggle: FunctionalComponent<Props> = ({ isInsideHeader }) => {
 	const [theme, setTheme] = useState(() => {
 		if (import.meta.env.SSR) {
 			return undefined;
@@ -53,7 +57,7 @@ const ThemeToggle: FunctionalComponent = () => {
 	}, [theme]);
 
 	return (
-		<div className="theme-toggle">
+		<div class={`theme-toggle ${isInsideHeader ? 'hide-toggle-on-smaller-screens' : ''}`}>
 			{themes.map((t, i) => {
 				const icon = icons[i];
 				const checked = t === theme;

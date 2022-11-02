@@ -40,7 +40,7 @@ const LanguageSelect: FunctionComponent<{ lang: string }> = ({ lang }) => {
 				{Object.entries(KNOWN_LANGUAGES).map(([key, value]) => {
 					return (
 						<option value={value} key={value}>
-							<span>{key}&nbsp;&nbsp;&nbsp;</span>
+							{key}&nbsp;&nbsp;&nbsp;
 						</option>
 					);
 				})}

@@ -1,6 +1,7 @@
 ---
 import { getLanguageFromURL } from '../../languages';
 import { SIDEBAR } from '../../config';
+import ThemeToggleButton from '../Header/ThemeToggleButton';
 
 type Props = {
 	currentPage: string;
@@ -35,6 +36,12 @@ const sidebar = SIDEBAR[langCode];
 				</div>
 			</li>
 		))}
+		<li style="text-align: center;">
+			<ThemeToggleButton 
+			client:visible
+			isInsideHeader={false} 
+			/>
+		</li>
 	</ul>
 </nav>
 
