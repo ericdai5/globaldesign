@@ -314,7 +314,7 @@ h2.heading {
 .heading-link {
 	font-size: 1rem;
 	padding: 0.1rem 0 0.1rem 1rem;
-	border-left: 4px solid var(--theme-divider);
+	border-left: 1px solid var(--theme-divider);
 }
 
 .heading-link:hover,
