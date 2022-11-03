@@ -9,7 +9,7 @@ interface Props {
 }
 
 const icons = [
-	<svg
+	<svg 
 		xmlns="http://www.w3.org/2000/svg"
 		width="20"
 		height="20"
@@ -64,7 +64,7 @@ const ThemeToggle: FunctionalComponent<Props> = ({ isInsideHeader }) => {
 				return (
 					<label className={checked ? ' checked' : ''}>
 						{icon}
-						<input
+						<input 
 							type="radio"
 							name="theme-toggle"
 							checked={checked}

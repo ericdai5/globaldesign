@@ -69,4 +69,26 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Newsletters', link: 'en/newsletters' },
 		],
 	},
+	zh: {
+		'Introduction': [
+			{ text: 'Overview', link: 'zh/introduction' },
+			{ text: 'Main Principles', link: 'zh/page-2' },
+			{ text: 'Main Challenges', link: 'zh/page-3' },
+		],
+		'User Research': [
+			{ text: 'Overview', link: 'zh/user-research-overview' },
+			{ text: 'Interview', link: 'zh/interview' },
+		],
+
+		'Translation': [
+			{ text: 'Overview', link: 'zh/translation-overview' },
+			{ text: 'Text Direction', link: 'zh/text-direction' },
+			{ text: 'Text Expansion', link: 'zh/text-expansion' },
+		],
+
+		'Resources': [
+			{ text: 'Books', link: 'zh/books' },
+			{ text: 'Newsletters', link: 'zh/newsletters' },
+		],
+	},
 };
