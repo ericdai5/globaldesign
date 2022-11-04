@@ -24,8 +24,14 @@ const lang = getLanguageFromURL(currentPage);
 		<!-- site title and logo -->
 		<div class="logo flex">
 			<a href="/">
-				<!-- <AstroLogo size={40} />-->
+				<AstroLogo size={45} />
+			</a>
+			<a href="/">
+				<h1>Global</h1>
+				<!-- 
 				<h1>{CONFIG.SITE.title ?? 'Documentation'}</h1>
+				-->
+				<h1>Design</h1>
 			</a>
 		</div>
 
@@ -123,6 +129,9 @@ const lang = getLanguageFromURL(currentPage);
 		width: 100%;
 		padding-inline: var(--min-spacing-inline);
 		z-index: 8;
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1440px;
 	}
 
 	/* If the device is likely to show a scrollbar gutter, reserve space for it */
@@ -153,7 +162,7 @@ const lang = getLanguageFromURL(currentPage);
 			gap: 1rem;
 		}
 		.logo {
-			font-size: 1.75rem;
+			font-size: 1.50rem;
 		}
 	}
 

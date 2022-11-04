@@ -1,12 +1,12 @@
 ---
-title: Introduction
+title: Global Design
 description: Global Design Introduction
 layout: ../../layouts/MainLayout.astro
 ---
 
-**Welcome to Global Design!**
+**Welcome to Global Design Guide!**
 
-Global Design is a resource for guidelines that pertain to best practices for creating cross-cultural designs and building international web products.
+Global Design Guide is a resource for guidelines that pertain to best practices for creating cross-cultural designs and building international web products.
 
 As the world becomes more and more connected through digital internet applications, there is a need to think about the cross-cultural aspect of design for products that span multiple countries, continents, or various demographics.  This project hopes to address the demand for resources that address the considerations and processes that goes behind the creation of global products.
 

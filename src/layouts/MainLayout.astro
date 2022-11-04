@@ -19,6 +19,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const currentPage = Astro.url.pathname;
 const currentFile = `src/pages${currentPage.replace(/\/$/, '')}.md`;
 const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
+
 ---
 
 <html dir={frontmatter.dir ?? 'ltr'} lang={frontmatter.lang ?? 'en-us'} class="initial">
@@ -43,20 +44,21 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 			#left-sidebar {
 				display: none;
 				background: var(--theme-bg-gradient);
-				inset-inline-start: 2rem;
 				z-index: 10;
+				width: 100vw;
 			}
 			#right-sidebar {
 				display: none;
 				top: calc(var(--theme-navbar-height) + 2rem);
-				inset-inline-end: 0;
 				width: var(--theme-right-sidebar-width);
 			}
+
 			#main-content {
 				display: flex;
 				flex-direction: column;
 				height: 100%;
-				min-width: 0;
+				max-width: 80ch;
+				margin: 0;
 			}
 
 			/* Allow showing left sidebar as an overlay, but only while viewport stays narrow */
@@ -85,11 +87,6 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 			
 			/* settings for the whole page at 50 em */
 			@media (min-width: 50em) {
-
-				.main-column {
-					margin-inline-start: calc(var(--theme-left-sidebar-width) + 2rem);
-				}
-
 				#left-sidebar {
 					display: flex;
 					padding-inline-start: var(--min-spacing-inline);
@@ -101,36 +98,34 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 			}
 
 			@media (min-width: 72em) {
-				.main-column {
-					margin-inline-end: var(--theme-right-sidebar-width);
-				}
 				#right-sidebar {
 					display: flex;
-				}
-				.wrapper {
-					margin-right: auto;
-					margin-left: auto;
-					max-width: 1440px; 
 				}
 			}
 
 		</style>
 	</head>
 
-	<body class="wrapper">
+	<body class="bodywrapper">
 		<Header currentPage={currentPage} />
-		<main class="layout">
+		<main class="layout grid-container">
+			<div class="grid-item">
 			<aside id="left-sidebar" class="sidebar">
 				<LeftSidebar currentPage={currentPage} />
 			</aside>
+			</div>
+			<div class="grid-item">
+				<div id="main-content" class="main-column">
+					<PageContent frontmatter={frontmatter} headings={headings} githubEditUrl={githubEditUrl}>
+						<slot />
+					</PageContent>
+				</div>
+			</div>
+			<div class="grid-item">
 			<aside id="right-sidebar" class="sidebar">
 				<RightSidebar headings={headings} githubEditUrl={githubEditUrl} />
 			</aside>
-			<div id="main-content" class="main-column">
-				<PageContent frontmatter={frontmatter} headings={headings} githubEditUrl={githubEditUrl}>
-					<slot />
-				</PageContent>
-			</div>
+		</div>
 		</main>
 		<div class="main-column">
 			<slot name="footer">
