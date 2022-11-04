@@ -37,12 +37,14 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 				top: 0;
 				bottom: 0;
 				padding: 0;
+				display: flex;
+				flex-direction: column;
 			}
 			#left-sidebar {
 				display: none;
 				background: var(--theme-bg-gradient);
-				z-index: 10;
 				inset-inline-start: 2rem;
+				z-index: 10;
 			}
 			#right-sidebar {
 				display: none;
@@ -55,8 +57,6 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 				flex-direction: column;
 				height: 100%;
 				min-width: 0;
-				padding-top: calc(var(--theme-navbar-height) + 2rem);
-				padding-bottom: var(--doc-padding-block);
 			}
 
 			/* Allow showing left sidebar as an overlay, but only while viewport stays narrow */
@@ -107,11 +107,17 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 				#right-sidebar {
 					display: flex;
 				}
+				.wrapper {
+					margin-right: auto;
+					margin-left: auto;
+					max-width: 1440px; 
+				}
 			}
 
 		</style>
+	</head>
 
-	<body>
+	<body class="wrapper">
 		<Header currentPage={currentPage} />
 		<main class="layout">
 			<aside id="left-sidebar" class="sidebar">
@@ -132,5 +138,4 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 			</slot>
 		</div>
 	</body>
-
 </html>

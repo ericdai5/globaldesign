@@ -1,13 +1,14 @@
 :root {
 	--theme-left-sidebar-width: 18rem;
 	--theme-right-sidebar-width: 18rem;
+	--theme-content-width: 80ch;
 	/*
 		Minimum visual horizontal spacing from the edges of the viewport,
 		and between vertically arranged elements
 	*/
 	--min-spacing-inline: 1rem;
 	/* Vertical spacing around the article content and the right sidebar */
-	--doc-padding-block: 0.5rem;
+	--doc-padding-block: 2rem;
 	--max-width: 100%;
 	--cur-viewport-height: 100vh;
 	/* Font sizes */
@@ -22,7 +23,7 @@
 @media (min-width: 50em) {
 	:root {
 		--min-spacing-inline: 1.5rem;
-		--doc-padding-block: 1rem;
+		--doc-padding-block: 2rem;
 		--max-width: 46em;
 		--theme-text-sm: 0.875rem;
 		--theme-text-xs: 0.8125rem;
