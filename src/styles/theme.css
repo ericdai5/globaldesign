@@ -96,8 +96,8 @@
 
 :root {
 	color-scheme: light;
-	--theme-accent: hsla(var(--color-blue), 1);
-	--theme-text-accent: hsla(var(--color-blue), 1);
+	--theme-accent: rgb(0, 148, 222);
+	--theme-text-accent: rgb(0, 93, 222);
 	--theme-accent-opacity: 0.15;
 	--theme-divider: hsla(var(--color-gray-90), 1);
 	--theme-text: hsla(var(--color-gray-10), 1);
@@ -127,8 +127,8 @@ body {
 :root.theme-dark {
 	color-scheme: dark;
 	--theme-accent-opacity: 0.15;
-	--theme-accent: hsla(var(--color-blue), 1);
-	--theme-text-accent: hsla(var(--color-blue), 1);
+	--theme-accent: rgb(255, 116, 160);
+	--theme-text-accent: rgb(253, 160, 190);
 	--theme-divider: hsla(var(--color-gray-20), 1);
 	--theme-text: hsla(var(--color-gray-90), 1);
 	--theme-text-light: hsla(var(--color-gray-80), 1);
@@ -136,7 +136,7 @@ body {
 	/* @@@: not used anywhere */
 	--theme-text-lighter: hsla(var(--color-gray-40), 1);
 	--theme-bg: rgb(15, 15, 15);
-	--theme-bg-hover: hsla(var(--color-gray-40), 1);
+	--theme-bg-hover: hsla(var(--color-gray-20), 1);
 	--theme-bg-offset: hsla(var(--color-gray-5), 1);
 	--theme-code-inline-bg: hsla(var(--color-gray-10), 1);
 	--theme-code-inline-text: hsla(var(--color-base-white), 100%, 1);

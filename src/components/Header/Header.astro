@@ -104,13 +104,22 @@ const lang = getLanguageFromURL(currentPage);
 	}
 
 	.logo a {
-		transition: color 100ms ease-out;
+		transition: all 0.1s ease-in;
 		color: var(--theme-text);
 	}
 
 	.logo a:hover,
 	.logo a:focus {
-		color: var(--theme-text-accent);
+		transform: scale(105%);
+		/*
+		color: var(--theme-text);
+		background-image: linear-gradient(#ababab, #585858);
+		background-size: 100%;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		-webkit-text-fill-color: transparent; 
+		-moz-text-fill-color: transparent;
+		*/
 	}
 
 	.logo h1 {
@@ -162,7 +171,16 @@ const lang = getLanguageFromURL(currentPage);
 			gap: 1rem;
 		}
 		.logo {
-			font-size: 1.50rem;
+			font-size: 1.5rem;
+		}
+	}
+
+	@media (min-width: 30em) {
+		.logo {
+			font-size: 1.75rem;
+		}
+		.logo h1 {
+			display: initial;
 		}
 	}
 

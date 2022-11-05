@@ -119,6 +119,9 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 					<PageContent frontmatter={frontmatter} headings={headings} githubEditUrl={githubEditUrl}>
 						<slot />
 					</PageContent>
+					<slot name="footer">
+						<Footer path={currentFile} />
+					</slot>
 				</div>
 			</div>
 			<div class="grid-item">
@@ -127,10 +130,9 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 			</aside>
 		</div>
 		</main>
+		<!-- 
 		<div class="main-column">
-			<slot name="footer">
-				<Footer path={currentFile} />
-			</slot>
 		</div>
+		-->
 	</body>
 </html>
