@@ -96,8 +96,16 @@
 
 :root {
 	color-scheme: light;
-	--theme-accent: rgb(0, 148, 222);
-	--theme-text-accent: rgb(0, 93, 222);
+	--theme-accent: hsla(341, 100%, 72%);
+	--theme-accent-dark: hsl(340, 100%, 95%);
+	--theme-accent2: hsl(276, 100%, 63%);
+	--theme-accent-dark2: hsl(276, 100%, 95%);
+	--theme-accent3: hsl(192, 100%, 55%);
+	--theme-accent-dark3: hsl(193, 100%, 95%);
+	--theme-accent4: hsl(232, 100%, 68%);
+	--theme-accent-dark4: hsl(232, 100%, 95%);
+	--theme-text-accent: hsl(280, 72%, 44%);
+	--theme-dim-light: hsla(var(--color-gray-80), 1);
 	--theme-accent-opacity: 0.15;
 	--theme-divider: hsla(var(--color-gray-90), 1);
 	--theme-text: hsla(var(--color-gray-10), 1);
@@ -107,7 +115,7 @@
 	--theme-bg: hsla(var(--color-base-white), 100%, 1);
 	--theme-bg-hover: hsla(var(--color-gray-95), 1);
 	--theme-bg-offset: hsla(var(--color-gray-90), 1);
-	--theme-bg-accent: hsla(var(--color-blue), var(--theme-accent-opacity));
+	--theme-bg-accent: hsla(var(--color-purple), var(--theme-accent-opacity));
 	--theme-code-inline-bg: hsla(var(--color-gray-95), 1);
 	--theme-code-inline-text: var(--theme-text);
 	--theme-code-bg: hsla(217, 19%, 27%, 1);
@@ -127,8 +135,16 @@ body {
 :root.theme-dark {
 	color-scheme: dark;
 	--theme-accent-opacity: 0.15;
-	--theme-accent: rgb(255, 116, 160);
+	--theme-accent: hsla(341, 100%, 72%);
+	--theme-accent-dark: hsl(341, 42%, 10%);
+	--theme-accent2: hsl(276, 100%, 63%);
+	--theme-accent-dark2: hsl(276, 62%, 10%);
+	--theme-accent3: hsl(192, 100%, 55%);
+	--theme-accent-dark3: hsl(194, 66%, 10%);
+	--theme-accent4: hsl(232, 100%, 68%);
+	--theme-accent-dark4: hsl(231, 40%, 10%);
 	--theme-text-accent: rgb(253, 160, 190);
+	--theme-dim-light: hsla(var(--color-gray-90), 0.2);
 	--theme-divider: hsla(var(--color-gray-20), 1);
 	--theme-text: hsla(var(--color-gray-90), 1);
 	--theme-text-light: hsla(var(--color-gray-80), 1);

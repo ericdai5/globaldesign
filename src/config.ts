@@ -6,10 +6,9 @@ export const SITE = {
 
 export const OPEN_GRAPH = {
 	image: {
-		src: 'https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true',
+		src: 'public/globaldesignlogo.png',
 		alt:
-			'astro logo on a starry expanse of space,' +
-			' with a purple saturn-like planet floating in the right foreground',
+		'Global Design is a resource for guidelines that pertain to best practices for creating cross-cultural designs and building international web products.'
 	},
 	twitter: 'astrodotbuild',
 };

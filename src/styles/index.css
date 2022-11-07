@@ -3,6 +3,10 @@
 	margin: 0;
 }
 
+html {
+    overflow-y: overlay;
+}
+
 /* Global focus outline reset */
 *:focus:not(:focus-visible) {
 	outline: none;
@@ -408,6 +412,35 @@ h2.heading {
 	white-space: normal;
 }
 
+/* Firefox */
+* {
+	scrollbar-color: var(--theme-dim-light) transparent;
+}
+
+/* Webkit */
+/* Make scrollbars transparent except for main page scrollbar. */
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-track {
+	background: var(--theme-bg-gradient);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--theme-dim-light);
+	border: 4px solid transparent;
+	background-clip: content-box;
+	border-radius: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	:root {
+		scroll-behavior: smooth;
+	}
+}
+
 .noselect {
 	-webkit-touch-callout: none; /* iOS Safari */
 	  -webkit-user-select: none; /* Safari */
@@ -439,4 +472,61 @@ html {
 		/* Regular TOC is displayed as a sidebar */
 		scroll-padding-top: calc(1.5rem + var(--theme-navbar-height));
 	}
+}
+
+.highlightbox {
+	border-inline-start: 4px solid var(--theme-accent);
+	padding: 1.5rem;
+	background-color: var(--theme-accent-dark);
+	border-radius: 4px;
+	outline: 1px solid transparent;
+	margin-bottom: 1rem;
+}
+
+.highlightbox2 {
+	border-inline-start: 4px solid var(--theme-accent2);
+	padding: 1.5rem;
+	background-color: var(--theme-accent-dark2);
+	border-radius: 4px;
+	outline: 1px solid transparent;
+	margin-bottom: 1rem;
+}
+
+.highlightbox3 {
+	border-inline-start: 4px solid var(--theme-accent3);
+	padding: 1.5rem;
+	background-color: var(--theme-accent-dark3);
+	border-radius: 4px;
+	outline: 1px solid transparent;
+	margin-bottom: 1rem;
+}
+
+.highlightbox4 {
+	border-inline-start: 4px solid var(--theme-accent4);
+	padding: 1.5rem;
+	background-color: var(--theme-accent-dark4);
+	border-radius: 4px;
+	outline: 1px solid transparent;
+	margin-bottom: 1rem;
+}
+
+@media (min-width: 35em) {
+	.highlightbox {
+		max-width: 48.5%;
+	}
+	.highlightbox2 {
+		max-width: 48.5%;
+	}
+	.highlightbox3 {
+		max-width: 48.5%;
+	}
+	.highlightbox4 {
+		max-width: 48.5%;
+	}
+}
+
+.boxcontainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
