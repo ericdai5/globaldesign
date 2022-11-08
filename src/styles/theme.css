@@ -112,7 +112,7 @@
 	--theme-text-light: hsla(var(--color-gray-10), 1);
 	/* @@@: not used anywhere */
 	--theme-text-lighter: hsla(var(--color-gray-80), 1);
-	--theme-bg: hsla(var(--color-base-white), 100%, 1);
+	--theme-bg: hsla(var(--color-base-white), 98%, 1);
 	--theme-bg-hover: hsla(var(--color-gray-95), 1);
 	--theme-bg-offset: hsla(var(--color-gray-90), 1);
 	--theme-bg-accent: hsla(var(--color-purple), var(--theme-accent-opacity));
@@ -120,8 +120,8 @@
 	--theme-code-inline-text: var(--theme-text);
 	--theme-code-bg: hsla(217, 19%, 27%, 1);
 	--theme-code-text: hsla(var(--color-gray-95), 1);
-	--theme-navbar-bg: hsla(var(--color-base-white), 100%, 1);
-	--theme-navbar-bg-opaque: rgba(255, 255, 255, 0.6);
+	--theme-navbar-bg: hsla(var(--color-base-white), 98%, 1);
+	--theme-navbar-bg-opaque: hsla(var(--color-base-white), 98%, 0.6);
 	--theme-navbar-height: 6rem;
 	--theme-selection-color: hsla(var(--color-blue), 1);
 	--theme-selection-bg: hsla(var(--color-blue), var(--theme-accent-opacity));
