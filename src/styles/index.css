@@ -529,6 +529,22 @@ html {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	
+}
+
+.imagebox {
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: gray; 
+	border-radius: 4px;
+	outline: 1px solid transparent;
+	margin-bottom: 1rem;
+}
+
+@media (min-width: 35em) {
+	.imagebox {
+		max-width: 48.5%;
+	}
 }
 
 .center {
@@ -545,3 +561,4 @@ html {
 	width: 100%;
 	box-shadow: 10px 10px 5px;
 }
+

@@ -75,6 +75,7 @@
 
 	--color-gray-5: var(--color-base-gray), 5%;
 	--color-gray-10: var(--color-base-gray), 10%;
+	--color-gray-15: var(--color-base-gray), 15%;
 	--color-gray-20: var(--color-base-gray), 20%;
 	--color-gray-30: var(--color-base-gray), 30%;
 	--color-gray-40: var(--color-base-gray), 40%;
@@ -113,7 +114,7 @@
 	/* @@@: not used anywhere */
 	--theme-text-lighter: hsla(var(--color-gray-80), 1);
 	--theme-bg: hsla(var(--color-base-white), 98%, 1);
-	--theme-bg-hover: hsla(var(--color-gray-95), 1);
+	--theme-bg-hover: hsla(var(--color-gray-90), 1);
 	--theme-bg-offset: hsla(var(--color-gray-90), 1);
 	--theme-bg-accent: hsla(var(--color-purple), var(--theme-accent-opacity));
 	--theme-code-inline-bg: hsla(var(--color-gray-95), 1);
@@ -152,7 +153,7 @@ body {
 	/* @@@: not used anywhere */
 	--theme-text-lighter: hsla(var(--color-gray-40), 1);
 	--theme-bg: rgb(15, 15, 15);
-	--theme-bg-hover: hsla(var(--color-gray-20), 1);
+	--theme-bg-hover: hsla(var(--color-gray-15), 1);
 	--theme-bg-offset: hsla(var(--color-gray-5), 1);
 	--theme-code-inline-bg: hsla(var(--color-gray-10), 1);
 	--theme-code-inline-text: hsla(var(--color-base-white), 100%, 1);
