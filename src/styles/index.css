@@ -530,3 +530,17 @@ html {
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.img.Image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}

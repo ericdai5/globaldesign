@@ -6,7 +6,7 @@ layout: ../../layouts/MainLayout.astro
 
 Global Design is a resource for guidelines that pertain to best practices for creating cross-cultural designs and building international web products.
 
-As the world becomes more and more connected through digital internet applications, it is important for product designers who are designing for global audiences to understand the cross-cultural aspect of design. Additionally, it is important to structure and refine our approach to creating products that span multiple countries, continents, or various demographics. This project hopes to address the demand for resources that address the frameworks for designing global products.
+As more and more international web products are created, it is important for product designers who are designing for global audiences to understand the cross-cultural aspect of design. Additionally, it is important to structure and refine our approach to creating products that span multiple countries, continents, or various demographics. This project hopes to address the demand for resources that address the frameworks for designing global products.
 
 This site is a work in progress. If you are interested in helping to build this resource, please reach out here [(email)](mailto:ericdai@sas.upenn.edu).
 
@@ -38,6 +38,6 @@ Here are some principles to focus on when designing global web products.
 
 ## Get Started
 
-Here are some information to get you started learning more about designing cross-cultural and international products.
+Here's some information to get you started learning more about designing cross-cultural and international products.
 
 Enjoy! 🌎🌏🌍

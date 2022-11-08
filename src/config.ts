@@ -49,40 +49,39 @@ export const SIDEBAR: Sidebar = {
 	en: {
 		'Introduction': [
 			{ text: 'Overview', link: 'en/introduction' },
-			{ text: 'Main Principles', link: 'en/page-2' },
-			{ text: 'Main Challenges', link: 'en/page-3' },
+			{ text: 'Challenges', link: 'en/challenges' },
 		],
 		'User Research': [
 			{ text: 'Overview', link: 'en/user-research-overview' },
 			{ text: 'Interview', link: 'en/interview' },
 		],
 
-		'Translation': [
-			{ text: 'Overview', link: 'en/translation-overview' },
-			{ text: 'Text Direction', link: 'en/text-direction' },
-			{ text: 'Text Expansion', link: 'en/text-expansion' },
+		'Language': [
+			{ text: 'Typography', link: 'en/typography' },
+			{ text: 'Text Direction', link: 'en/textdirection' },
+			{ text: 'Text Expansion', link: 'en/textexpansion' },
 		],
-
-		'Resources': [
-			{ text: 'Books', link: 'en/books' },
-			{ text: 'Newsletters', link: 'en/newsletters' },
+		'Culture': [
+			{ text: 'Color', link: 'en/color' },
+			{ text: 'Images and Icons', link: 'en/imagesandicons' },
+			{ text: 'Content Density', link: 'en/contentdensity' },
 		],
 	},
 	zh: {
-		'Introduction': [
-			{ text: 'Overview', link: 'zh/introduction' },
-			{ text: 'Main Principles', link: 'zh/page-2' },
-			{ text: 'Main Challenges', link: 'zh/page-3' },
+		'介绍': [
+			{ text: '概述', link: 'zh/introduction' },
+			{ text: 'Principles', link: 'zh/principles' },
+			{ text: 'Challenges', link: 'zh/challenges' },
 		],
 		'User Research': [
 			{ text: 'Overview', link: 'zh/user-research-overview' },
 			{ text: 'Interview', link: 'zh/interview' },
 		],
 
-		'Translation': [
-			{ text: 'Overview', link: 'zh/translation-overview' },
-			{ text: 'Text Direction', link: 'zh/text-direction' },
-			{ text: 'Text Expansion', link: 'zh/text-expansion' },
+		'语言': [
+			{ text: '字体', link: 'zh/typography' },
+			{ text: '文本方向', link: 'zh/textdirection' },
+			{ text: '文本扩展', link: 'zh/textexpansion' },
 		],
 
 		'Resources': [

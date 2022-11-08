@@ -41,10 +41,10 @@ const ThemeToggle: FunctionalComponent<Props> = ({ isInsideHeader }) => {
 		if (typeof localStorage !== undefined && localStorage.getItem('theme')) {
 			return localStorage.getItem('theme');
 		}
-		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-			return 'dark';
+		if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+			return 'light';
 		}
-		return 'light';
+		return 'dark';
 	});
 
 	useEffect(() => {
