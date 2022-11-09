@@ -66,6 +66,7 @@ export const SIDEBAR: Sidebar = {
 		'Culture': [
 			{ text: 'Color', link: 'en/colors' },
 			{ text: 'Images and Icons', link: 'en/imagesandicons' },
+			{ text: 'Mental Models', link: 'en/mentalmodels' },
 			{ text: 'Content Density', link: 'en/contentdensity' },
 		],
 	},

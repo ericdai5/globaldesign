@@ -141,6 +141,8 @@
 	--red-bg: hsl(0, 100%, 90%);
 	--black-bg: hsl(0, 0%,90%);
 	--white-bg: hsl(0, 0%, 90%);
+
+	--neutral-bg: hsl(0, 0%, 90%);
 }
 
 body {
@@ -205,6 +207,7 @@ body {
 	--black-bg: hsl(0, 0%,10%);
 	--white-bg: hsl(0, 0%, 10%);
 
+	--neutral-bg: hsl(0, 0%, 10%);
 }
 
 ::selection {

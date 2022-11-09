@@ -517,6 +517,14 @@ html {
 	margin-bottom: 1rem;
 }
 
+.highlightbox6 {
+	padding: 1.5rem;
+	background-color: var(--neutral-bg);
+	border-radius: 4px;
+	outline: 1px solid transparent;
+	margin-bottom: 1rem;
+}
+
 @media (min-width: 35em) {
 	.highlightbox {
 		max-width: 48.5%;
@@ -528,6 +536,9 @@ html {
 		max-width: 48.5%;
 	}
 	.highlightbox4 {
+		max-width: 48.5%;
+	}
+	.highlightbox6 {
 		max-width: 48.5%;
 	}
 }
