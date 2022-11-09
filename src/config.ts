@@ -52,8 +52,10 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Challenges', link: 'en/challenges' },
 		],
 		'User Research': [
-			{ text: 'Overview', link: 'en/user-research-overview' },
-			{ text: 'Interview', link: 'en/interview' },
+			{ text: 'Goals and Focus', link: 'en/goalsandfocus' },
+			{ text: 'People and Talent', link: 'en/people' },
+			{ text: 'Budgeting', link: 'en/budgeting' },
+			{ text: 'Methods', link: 'en/methods' },
 		],
 
 		'Language': [
@@ -62,7 +64,7 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Text Expansion', link: 'en/textexpansion' },
 		],
 		'Culture': [
-			{ text: 'Color', link: 'en/color' },
+			{ text: 'Color', link: 'en/colors' },
 			{ text: 'Images and Icons', link: 'en/imagesandicons' },
 			{ text: 'Content Density', link: 'en/contentdensity' },
 		],
@@ -70,12 +72,13 @@ export const SIDEBAR: Sidebar = {
 	zh: {
 		'介绍': [
 			{ text: '概述', link: 'zh/introduction' },
-			{ text: 'Principles', link: 'zh/principles' },
-			{ text: 'Challenges', link: 'zh/challenges' },
+			{ text: '挑战', link: 'zh/challenges' },
 		],
-		'User Research': [
-			{ text: 'Overview', link: 'zh/user-research-overview' },
-			{ text: 'Interview', link: 'zh/interview' },
+		'用户研究': [
+			{ text: '目标和重点', link: 'zh/goalsandfocus' },
+			{ text: '人才', link: 'zh/people' },
+			{ text: '预算和优先级', link: 'zh/budgeting' },
+			{ text: '方法', link: 'zh/methods' },
 		],
 
 		'语言': [
@@ -83,10 +86,10 @@ export const SIDEBAR: Sidebar = {
 			{ text: '文本方向', link: 'zh/textdirection' },
 			{ text: '文本扩展', link: 'zh/textexpansion' },
 		],
-
-		'Resources': [
-			{ text: 'Books', link: 'zh/books' },
-			{ text: 'Newsletters', link: 'zh/newsletters' },
+		'文化': [
+			{ text: '颜色', link: 'zh/colors' },
+			{ text: '图像和图标', link: 'zh/imagesandicons' },
+			{ text: '内容密度', link: 'zh/contentdensity' },
 		],
 	},
 };

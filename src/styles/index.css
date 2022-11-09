@@ -510,6 +510,13 @@ html {
 	margin-bottom: 1rem;
 }
 
+.highlightbox5 {
+	padding: 1.5rem;
+	border-radius: 4px;
+	outline: 1px solid transparent;
+	margin-bottom: 1rem;
+}
+
 @media (min-width: 35em) {
 	.highlightbox {
 		max-width: 48.5%;
