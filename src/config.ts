@@ -53,7 +53,7 @@ export const SIDEBAR: Sidebar = {
 		],
 		'User Research': [
 			{ text: 'Goals and Focus', link: 'en/goalsandfocus' },
-			{ text: 'People and Talent', link: 'en/people' },
+			{ text: 'People', link: 'en/people' },
 			{ text: 'Budgeting', link: 'en/budgeting' },
 			{ text: 'Methods', link: 'en/methods' },
 		],
