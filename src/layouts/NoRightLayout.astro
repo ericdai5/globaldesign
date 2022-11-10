@@ -1,0 +1,121 @@
+---
+import HeadCommon from '../components/HeadCommon.astro';
+import HeadSEO from '../components/HeadSEO.astro';
+import Header from '../components/Header/Header.astro';
+import PageContent from '../components/PageContent/PageContent.astro';
+import LeftSidebar from '../components/LeftSidebar/LeftSidebar.astro';
+import * as CONFIG from '../config';
+import type { MarkdownHeading } from 'astro';
+import Footer from '../components/Footer/Footer.astro';
+
+type Props = {
+	frontmatter: CONFIG.Frontmatter;
+	headings: MarkdownHeading[];
+};
+
+const { frontmatter, headings } = Astro.props as Props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const currentPage = Astro.url.pathname;
+const currentFile = `src/pages${currentPage.replace(/\/$/, '')}.md`;
+const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
+
+---
+
+<html dir={frontmatter.dir ?? 'ltr'} lang={frontmatter.lang ?? 'en-us'} class="initial">
+	<head>
+		<HeadCommon />
+		<HeadSEO frontmatter={frontmatter} canonicalUrl={canonicalURL} />
+
+		<!-- browser tab title -->
+		<title>
+			{frontmatter.title ? `${frontmatter.title} - ${CONFIG.SITE.title}` : CONFIG.SITE.title}
+		</title>
+
+		<style>
+			.sidebar {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+			}
+			#left-sidebar {
+				display: none;
+				background: var(--theme-bg-gradient);
+				z-index: 10;
+				width: 100vw;
+			}
+
+			#main-content {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				max-width: 80ch;
+				margin: 0;
+			}
+
+			/* Allow showing left sidebar as an overlay, but only while viewport stays narrow */
+			@media not screen and (min-width: 50em) {
+				/* Make the left sidebar visible and fill the entire viewport below the navbar */
+				:global(.mobile-sidebar-toggle #left-sidebar) {
+					display: block;
+					top: var(--theme-navbar-height);
+					inset-inline-end: 0;
+				}
+				/*
+					Try to prevent the rest of the page from scrolling, and the main content from being visible below the overlay.
+					Unfortunately, iOS Safari doesn't currently play well with this and will sometimes still scroll the page even though it shouldn't.
+					Once overscroll-behavior is properly supported, this should be fixed.
+				*/
+				:global(.mobile-sidebar-toggle) {
+					overflow: hidden;
+				}
+				:global(.mobile-sidebar-toggle .main-column) {
+					visibility: hidden;
+				}
+				:global(.mobile-sidebar-toggle #left-sidebar ul) {
+					overscroll-behavior: contain;
+				}
+			}
+			
+			/* settings for the whole page at 50 em */
+			@media (min-width: 50em) {
+				#left-sidebar {
+					display: flex;
+					padding-inline-start: var(--min-spacing-inline);
+					padding-inline-end: 1rem;
+					top: calc(var(--theme-navbar-height) + 2rem);
+					width: var(--theme-left-sidebar-width);
+					background: transparent;
+				}
+			}
+
+		</style>
+	</head>
+
+	<body class="bodywrapper">
+		<Header currentPage={currentPage} />
+		<main class="layout grid-container">
+			<div class="grid-item">
+			<aside id="left-sidebar" class="sidebar">
+				<LeftSidebar currentPage={currentPage} />
+			</aside>
+			</div>
+			<div class="grid-item">
+				<div id="main-content" class="main-column">
+					<PageContent frontmatter={frontmatter} headings={headings} githubEditUrl={githubEditUrl}>
+						<slot />
+					</PageContent>
+					<slot name="footer">
+						<Footer path={currentFile} />
+					</slot>
+				</div>
+			</div>
+		</main>
+		<!-- 
+		<div class="main-column">
+		</div>
+		-->
+	</body>
+</html>

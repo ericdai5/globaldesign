@@ -49,7 +49,6 @@ export const SIDEBAR: Sidebar = {
 	en: {
 		'Introduction': [
 			{ text: 'Overview', link: 'en/introduction' },
-			{ text: 'Challenges', link: 'en/challenges' },
 		],
 		'User Research': [
 			{ text: 'Goals and Focus', link: 'en/goalsandfocus' },
@@ -68,11 +67,13 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Mental Models', link: 'en/mentalmodels' },
 			{ text: 'Content Density', link: 'en/contentdensity' },
 		],
+		'Resources': [
+			{ text: 'Inspirations', link: 'en/inspirations' },
+		],
 	},
 	zh: {
 		'介绍': [
 			{ text: '概述', link: 'zh/introduction' },
-			{ text: '挑战', link: 'zh/challenges' },
 		],
 		'用户研究': [
 			{ text: '目标和重点', link: 'zh/goalsandfocus' },
@@ -90,6 +91,9 @@ export const SIDEBAR: Sidebar = {
 			{ text: '图像和图标', link: 'zh/imagesandicons' },
 			{ text: '心智模型', link: 'zh/mentalmodels' },
 			{ text: '内容密度', link: 'zh/contentdensity' },
+		],
+		'资源': [
+			{ text: '灵感', link: 'zh/inspirations' },
 		],
 	},
 };
