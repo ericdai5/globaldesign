@@ -1,21 +1,21 @@
 ---
-title: Mental Models
-description: Mental Models
+title: 心智模型
+description: 心智模型
 layout: ../../layouts/MainLayout.astro
 ---
 
-Mental models are formed through habit. When it comes to products, users’ brains develop certain expectations of how their experience should go. People like to use products that adhere to their mental models. Designers should take note of existing mental models of users to make sure they are delivering experiences that are easily understandable.
+心理模型是通过习惯形成的。谈到产品，用户的大脑对他们的体验应该如何发展产生了一定的期望。人们喜欢使用符合他们心智模型的产品。设计师应注意现有的用户心理模型，以确保他们提供易于理解的体验。
 
 ## Solutions
 
 <div class="boxcontainer">
 <div class="highlightbox6">
-    <h4>Know Assumptions</h4>
-    <p>Designers come from a specific background that gives them biases and assumptions of their own, thus their own unique mental models. The field of design also utilizes common modes of thinking that could be confusing to the average user. Even the simplest UI and UX patterns could be challenging to certain populations, so designers should point out the gap in mental models.</p>
+    <h4>知道假设</h4>
+    <p>设计师来自特定的背景，这给了他们自己的偏见和假设，因此他们有自己独特的心理模型。设计领域还利用了可能让普通用户感到困惑的常见思维模式。即使是最简单的 UI 和 UX 模式也可能对某些人群具有挑战性，因此设计师应该指出心智模型中的差距。</p>
 </div>
 
 <div class="highlightbox6">
-    <h4>Find User Expectations</h4>
-    <p>Investigate people’s expectations of the product. Some features and user journeys simply will not work in a different country. For instance, eCommerce and shopping behavior ranges wildly between different countries. In certain parts of the world, people do not prefer online shopping and would rather browse online but shop in-stores, which leads to different user journeys.</p>
+    <h4>寻找用户期望</h4>
+    <p>调查人们对产品的期望。某些功能和用户旅程根本无法在不同的国家/地区使用。例如，不同国家/地区之间的电子商务和购物行为差异很大。在世界某些地区，人们不喜欢在线购物，而是更喜欢在线浏览，而是在实体店购物，这导致了不同的用户旅程。</p>
 </div>
 </div>

@@ -54,7 +54,6 @@ export const SIDEBAR: Sidebar = {
 		'User Research': [
 			{ text: 'Goals and Focus', link: 'en/goalsandfocus' },
 			{ text: 'People', link: 'en/people' },
-			{ text: 'Budgeting', link: 'en/budgeting' },
 			{ text: 'Methods', link: 'en/methods' },
 		],
 
@@ -78,7 +77,6 @@ export const SIDEBAR: Sidebar = {
 		'用户研究': [
 			{ text: '目标和重点', link: 'zh/goalsandfocus' },
 			{ text: '人才', link: 'zh/people' },
-			{ text: '预算和优先级', link: 'zh/budgeting' },
 			{ text: '方法', link: 'zh/methods' },
 		],
 
@@ -90,6 +88,7 @@ export const SIDEBAR: Sidebar = {
 		'文化': [
 			{ text: '颜色', link: 'zh/colors' },
 			{ text: '图像和图标', link: 'zh/imagesandicons' },
+			{ text: '心智模型', link: 'zh/mentalmodels' },
 			{ text: '内容密度', link: 'zh/contentdensity' },
 		],
 	},
