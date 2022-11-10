@@ -4,9 +4,9 @@ description: Global Design Introduction
 layout: ../../layouts/MainLayout.astro
 ---
 
-Global Design is a introductory resource for guidelines that pertain to best practices for creating cross-cultural designs and building international web products.
+Global Design is an introductory resource of best practices for creating cross-cultural designs and building international web products.
 
-As more and more international web products are created, it is important for product designers who are designing for global audiences to understand the cross-cultural aspect of design. Additionally, it is important to structure and refine our approach to designing products that span multiple countries, continents, or various demographics. This project hopes to address the demand for resources that address the frameworks for designing global products.
+With almost 5 billion internet users around the world, product designers need to understand the cross-cultural aspect of design. There are not many resources for designing products that span multiple countries and continents. This project hopes to be a space that teaches and inspires new designers about global design.
 
 This site is a work in progress. If you are interested in helping to build this resource, please reach out here [(email)](mailto:ericdai@sas.upenn.edu).
 
@@ -42,22 +42,22 @@ This guide is structured into three sections - User Research, Language, and Cult
 
 <br/>
 <a href="../goalsandfocus" style="text-decoration: none">
-<div class="highlightbox5" style="background-color: var(--neutral-bg);">
-    <h3>Goals and Focus</h3>
+<div class="highlightbox9">
+    <h3 style="color: var(--theme-text)">Goals and Focus</h3>
     <p>Using your objectives to determine the best course of action.</p>
 </div>
 </a>
 
 <a href="../imagesandicons" style="text-decoration: none">
-<div class="highlightbox5" style="background-color: var(--neutral-bg);">
-    <h3>Images and Icons</h3>
+<div class="highlightbox7">
+    <h3 style="color: var(--theme-text)">Images and Icons</h3>
     <p>Optimize images and icons for the purposes of internationalization or localization.</p>
 </div>
 </a>
 
 <a href="../inspirations" style="text-decoration: none">
-<div class="highlightbox5" style="background-color: var(--neutral-bg);">
-    <h3>Resources</h3>
+<div class="highlightbox8">
+    <h3 style="color: var(--theme-text)">Resources</h3>
     <p>Here's some helpful links to get you started on your design journey!</p>
 </div>
 </a>

@@ -42,22 +42,22 @@ layout: ../../layouts/MainLayout.astro
 
 <br/>
 <a href="../goalsandfocus" style="text-decoration: none">
-<div class="highlightbox5" style="background-color: var(--neutral-bg);">
-    <h3>目标和重点</h3>
+<div class="highlightbox9">
+    <h3 style="color: var(--theme-text)">目标和重点</h3>
     <p>使用您的目标来确定最佳行动方案。</p>
 </div>
 </a>
 
 <a href="../imagesandicons" style="text-decoration: none">
-<div class="highlightbox5" style="background-color: var(--neutral-bg);">
-    <h3>图像和图标</h3>
+<div class="highlightbox7">
+    <h3 style="color: var(--theme-text)">图像和图标</h3>
     <p>优化图像和图标以实现国际化或本地化。</p>
 </div>
 </a>
 
 <a href="../inspirations" style="text-decoration: none">
-<div class="highlightbox5" style="background-color: var(--neutral-bg);">
-    <h3>资源</h3>
+<div class="highlightbox8">
+    <h3 style="color: var(--theme-text)">资源</h3>
     <p>这里有一些有用的链接可以帮助您开始您的设计之旅！</p>
 </div>
 </a>

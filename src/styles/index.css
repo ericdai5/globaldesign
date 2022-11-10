@@ -516,7 +516,48 @@ html {
 	outline: 1px solid transparent;
 	margin-bottom: 1rem;
 	transition: all 0.1s ease-in-out;
+	background-color: var(--neutral-bg)
 }
+
+.highlightbox9 {
+	padding: 1.5rem;
+	border-radius: 4px;
+	outline: 1px solid transparent;
+	margin-bottom: 1rem;
+	transition: all 0.1s ease-in-out;
+	background-color: var(--theme-accent-dark);
+}
+
+.highlightbox7 {
+	padding: 1.5rem;
+	border-radius: 4px;
+	outline: 1px solid transparent;
+	margin-bottom: 1rem;
+	transition: all 0.1s ease-in-out;
+	background-color: var(--theme-accent-dark2);
+}
+
+.highlightbox8 {
+	padding: 1.5rem;
+	border-radius: 4px;
+	outline: 1px solid transparent;
+	margin-bottom: 1rem;
+	transition: all 0.1s ease-in-out;
+	background-color: var(--theme-accent-dark4);
+}
+
+.highlightbox9:hover {
+	border-inline-start: 6px solid var(--theme-accent);
+}
+
+.highlightbox7:hover {
+	border-inline-start: 6px solid var(--theme-accent2);
+}
+
+.highlightbox8:hover {
+	border-inline-start: 6px solid var(--theme-accent4);
+}
+
 
 .highlightbox6 {
 	padding: 1.5rem;
