@@ -105,7 +105,7 @@
 	--theme-accent-dark3: hsl(193, 100%, 95%);
 	--theme-accent4: hsl(232, 100%, 68%);
 	--theme-accent-dark4: hsl(232, 100%, 95%);
-	--theme-text-accent: hsl(280, 72%, 44%);
+	--theme-text-accent: hsl(259, 38%, 25%);
 	--theme-dim-light: hsla(var(--color-gray-80), 1);
 	--theme-accent-opacity: 0.15;
 	--theme-divider: hsla(var(--color-gray-90), 1);
@@ -142,7 +142,7 @@
 	--black-bg: hsl(0, 0%,90%);
 	--white-bg: hsl(0, 0%, 90%);
 
-	--neutral-bg: hsl(0, 0%, 90%);
+	--neutral-bg: hsl(0, 0%, 92%);
 }
 
 body {

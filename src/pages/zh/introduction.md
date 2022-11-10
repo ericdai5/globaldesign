@@ -38,6 +38,28 @@ layout: ../../layouts/MainLayout.astro
 
 ## 开始
 
-以下是一些信息，可帮助您开始了解有关设计跨文化和国际产品的更多信息。
+本指南分为三个部分 - 用户研究、语言和文化 - 重点介绍了全球设计的三个方面。这里有一些信息可帮助您开始了解有关设计跨文化和国际产品的更多信息。以下是一些信息，可帮助您开始了解有关设计跨文化和国际产品的更多信息。
+
+<br/>
+<a href="../en/goalsandfocus" style="text-decoration: none">
+<div class="highlightbox5" style="background-color: var(--neutral-bg);">
+    <h3>目标和重点</h3>
+    <p>使用您的目标来确定最佳行动方案。</p>
+</div>
+</a>
+
+<a href="../en/imagesandicons" style="text-decoration: none">
+<div class="highlightbox5" style="background-color: var(--neutral-bg);">
+    <h3>图像和图标</h3>
+    <p>优化图像和图标以实现国际化或本地化。</p>
+</div>
+</a>
+
+<a href="en/inspirations" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
+<div class="highlightbox5" style="background-color: var(--neutral-bg);">
+    <h3>资源</h3>
+    <p>这里有一些有用的链接可以帮助您开始您的设计之旅！</p>
+</div>
+</a>
 
 Enjoy! 🌎🌏🌍

@@ -515,6 +515,7 @@ html {
 	border-radius: 4px;
 	outline: 1px solid transparent;
 	margin-bottom: 1rem;
+	transition: all 0.1s ease-in-out;
 }
 
 .highlightbox6 {
