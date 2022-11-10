@@ -41,21 +41,21 @@ Here are some principles to focus on when designing global web products.
 This guide is structured into three sections - User Research, Language, and Culture - highlighting three aspects of global design. Here's some information to get you started on learning more about designing cross-cultural and international products.
 
 <br/>
-<a href="../en/goalsandfocus" style="text-decoration: none">
+<a href="../goalsandfocus" style="text-decoration: none">
 <div class="highlightbox5" style="background-color: var(--neutral-bg);">
     <h3>Goals and Focus</h3>
     <p>Using your objectives to determine the best course of action.</p>
 </div>
 </a>
 
-<a href="../en/imagesandicons" style="text-decoration: none">
+<a href="../imagesandicons" style="text-decoration: none">
 <div class="highlightbox5" style="background-color: var(--neutral-bg);">
     <h3>Images and Icons</h3>
     <p>Optimize images and icons for the purposes of internationalization or localization.</p>
 </div>
 </a>
 
-<a href="../en/inspirations" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
+<a href="../inspirations" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
 <div class="highlightbox5" style="background-color: var(--neutral-bg);">
     <h3>Resources</h3>
     <p>Here's some helpful links to get you started on your design journey!</p>
