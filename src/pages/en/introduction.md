@@ -55,7 +55,7 @@ This guide is structured into three sections - User Research, Language, and Cult
 </div>
 </a>
 
-<a href="en/inspirations" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
+<a href="../en/inspirations" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
 <div class="highlightbox5" style="background-color: var(--neutral-bg);">
     <h3>Resources</h3>
     <p>Here's some helpful links to get you started on your design journey!</p>
