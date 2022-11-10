@@ -62,4 +62,5 @@ layout: ../../layouts/MainLayout.astro
 </div>
 </a>
 
-Enjoy! 🌎🌏🌍
+
+<h4>Enjoy! 🌎🌏🌍</h4>

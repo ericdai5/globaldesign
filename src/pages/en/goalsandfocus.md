@@ -17,8 +17,18 @@ After this, the next step of your research is defining the focus of your researc
 
 Researchers must be very intentional about what the user research is trying to help the product designer accomplish - internationalization or localization. Here are their differences:
 
-1. **Internationalization** – the design and development of a product that allows for localization, which involves code, design, and content flexibility to function well across various cultures.
-2. **Localization** – the adaptation of a product to fit the language and cultural requirements of a particular locale.
+<br/>
+<div class="boxcontainer">
+<div class="highlightbox">
+    <h4>Internationalization</h4>
+    <p>Also referred to as i18n, this is the design and development of a product  that allows for localization, which involves code, design, and content flexibility to function well across various cultures.</p>
+</div>
+
+<div class="highlightbox">
+    <h4>Localization</h4>
+    <p>The adaptation of a product to fit the language and cultural requirements of a particular locale. This includes translation, documentation, packaging, and additional features.”</p>
+</div>
+</div>
 
 Internationalization would require you to conduct usability testing with a larger variety of international participants, while localization will require you to focus more on investigating specific preferences and understanding user behavior. 
 
