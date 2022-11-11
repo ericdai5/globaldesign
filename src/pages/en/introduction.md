@@ -4,9 +4,11 @@ description: Global Design Introduction
 layout: ../../layouts/MainLayout.astro
 ---
 
+<img src="/frontpage.png" title="Global Design" class="Image" style="border-radius: 4px" oncontextmenu="return false;">
+
 Global Design is an introductory resource of best practices for creating cross-cultural designs and building international web products.
 
-With almost 5 billion internet users around the world, product designers need to understand the cross-cultural aspect of design. There are not many resources for designing products that span multiple countries and continents. This project hopes to be a space that teaches and inspires new designers about global design.
+As of 2022, there are around 5 billion internet users around the world, and the cross-cultural aspect of design is more relevant than ever. There are not many resources for designing products that span multiple countries and continents. This project hopes to be a space that teaches and inspires new designers about global design.
 
 This site is a work in progress. If you are interested in helping to build this resource, please reach out here [(email)](mailto:ericdai@sas.upenn.edu).
 
