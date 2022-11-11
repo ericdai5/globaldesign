@@ -4,7 +4,7 @@ description: Global Design Introduction
 layout: ../../layouts/MainLayout.astro
 ---
 
-<img src="/frontpage.png" title="Global Design" class="Image" style="border-radius: 4px" oncontextmenu="return false;">
+<img src="/frontpage.png" title="Global Design" class="Image" style="border-radius: 4px">
 
 Global Design is an introductory resource of best practices for creating cross-cultural designs and building international web products.
 

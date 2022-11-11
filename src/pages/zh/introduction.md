@@ -4,6 +4,8 @@ description: Global Design Introduction
 layout: ../../layouts/MainLayout.astro
 ---
 
+<img src="/frontpage.png" title="Global Design" class="Image" style="border-radius: 4px">
+
 全球设计是有关创建跨文化设计和构建国际网络产品的最佳实践的指南资源。
 
 随着世界通过数字互联网应用程序变得越来越紧密，为全球受众设计的产品设计师了解设计的跨文化方面非常重要。此外，重要的是要构建和改进我们创建跨越多个国家、大洲或不同人口统计的产品的方法。该项目希望解决对解决全球产品设计框架的资源需求。
